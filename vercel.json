@@ -11,8 +11,7 @@
     },
     "build": {
         "env": {
-            "FLUTTER_ROOT": "$HOME/flutter",
-            "PATH": "$PATH:$HOME/flutter/bin"
+            "FLUTTER_ROOT": "$HOME/flutter"
         }
     },
     "headers": [
