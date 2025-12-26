@@ -1,0 +1,40 @@
+# Flutter development files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+pubspec.lock
+
+# Platform-specific folders (not needed for web)
+android/
+ios/
+linux/
+macos/
+windows/
+
+# Test files
+test/
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation (will be included in git but not needed on Vercel)
+README.md
+DEPLOYMENT.md
+
+# Metadata
+.metadata
+analysis_options.yaml

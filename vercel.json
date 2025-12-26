@@ -1,0 +1,39 @@
+{
+    "buildCommand": "flutter build web --release",
+    "outputDirectory": "build/web",
+    "installCommand": "if [ ! -d \"$HOME/flutter\" ]; then git clone https://github.com/flutter/flutter.git -b stable --depth 1 $HOME/flutter; fi && export PATH=\"$PATH:$HOME/flutter/bin\" && flutter doctor && flutter pub get",
+    "framework": null,
+    "devCommand": "flutter run -d web-server --web-port 3000",
+    "env": {
+        "FLUTTER_ROOT": "$HOME/flutter",
+        "FLUTTER_WEB_USE_SKIA": "true",
+        "FLUTTER_WEB_CANVASKIT_URL": "https://unpkg.com/canvaskit-wasm@0.39.1/bin/"
+    },
+    "build": {
+        "env": {
+            "FLUTTER_ROOT": "$HOME/flutter",
+            "PATH": "$PATH:$HOME/flutter/bin"
+        }
+    },
+    "headers": [
+        {
+            "source": "/(.*)",
+            "headers": [
+                {
+                    "key": "Cross-Origin-Embedder-Policy",
+                    "value": "credentialless"
+                },
+                {
+                    "key": "Cross-Origin-Opener-Policy",
+                    "value": "same-origin"
+                }
+            ]
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}

@@ -1,16 +1,69 @@
-# frusette_kitchen_web_dashboard
+# Frusette Kitchen Web Dashboard
 
-A new Flutter project.
+A Flutter web application for managing the Frusette Kitchen operations.
 
-## Getting Started
+## 🚀 Live Demo
 
-This project is a starting point for a Flutter application.
+The application is deployed on Vercel with automatic CI/CD.
 
-A few resources to get you started if this is your first Flutter project:
+> **Production URL**: _Will be available after first Vercel deployment_
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📋 Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Kitchen operations dashboard
+- Subscription management
+- Meal planning and tracking
+- Real-time updates
+
+## 🛠️ Development
+
+### Prerequisites
+
+- Flutter SDK (^3.10.0)
+- Dart SDK
+- Git
+
+### Local Setup
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd frusetter_kitchen_website
+
+# Install dependencies
+flutter pub get
+
+# Run in development mode
+flutter run -d chrome
+```
+
+### Build for Production
+
+```bash
+# Build web app
+flutter build web --release --web-renderer canvaskit
+
+# The output will be in build/web/
+```
+
+## 🌐 Deployment
+
+This project uses **Vercel** for hosting with automatic deployments on every push to the main branch.
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md).
+
+### Quick Deploy to Vercel
+
+1. Push your code to GitHub/GitLab/Bitbucket
+2. Connect your repository at [vercel.com/new](https://vercel.com/new)
+3. Vercel auto-detects the configuration and deploys
+
+## 📚 Resources
+
+- [Flutter Documentation](https://docs.flutter.dev/)
+- [Flutter Web Guide](https://flutter.dev/web)
+- [Vercel Documentation](https://vercel.com/docs)
+
+## 📝 License
+
+This project is part of the Frusette application suite.
