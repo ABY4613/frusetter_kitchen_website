@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Frusette Admin',
+      title: 'Frusette Kitchen',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       home: const SplashScreen(),
